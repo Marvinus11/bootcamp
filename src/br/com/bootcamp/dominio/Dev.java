@@ -69,6 +69,6 @@ public class Dev {
     }
 
     public double calcularTotalXp() {
-        this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXp).sum();
+        return this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXp).sum();
     }
 }
